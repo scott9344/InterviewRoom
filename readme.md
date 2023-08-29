@@ -38,6 +38,22 @@ I have tried my best to sort all those problems for you and ordered them as well
 | **PriorityQueue** | O(1) | O(log n) | O(log n) | N/A | Efficient priority queue (min-heap). |
 | **ArrayDeque** | O(1) | O(1) | O(1) | N/A | Double-ended queue. Efficient for adding/removing at both ends. |
 
+**Guidance on Choosing Collection Types:**
+
+- **Access Frequency**: Choose `ArrayList` for frequent read operations, but be cautious with inserts/removals, especially near the beginning.
+
+- **Frequent Inserts/Removals**: Consider `LinkedList` when frequent insertions and deletions are expected. It's efficient for these operations but slower for random access.
+
+- **No Duplicates**: Use `HashSet` or `LinkedHashSet` for collections with unique elements. Use `TreeSet` if you need sorted elements.
+
+- **Sorted Collections**: Choose `TreeSet` or `TreeMap` when you need elements or keys to be sorted.
+
+- **Fast Map Operations**: Use `HashMap` or `LinkedHashMap` for fast map operations, with `LinkedHashMap` preserving insertion order.
+
+- **Priority Queue**: `PriorityQueue` is efficient for managing priorities (e.g., tasks with different priorities in a scheduler).
+
+- **Double-Ended Queue**: `ArrayDeque` is a versatile choice for a queue that supports efficient addition/removal at both ends.
+
 ### Array
 | **ID** | **PROBLEM STATEMENT**                                    |  **PROBLEM LINK**           |
 |--------|----------------------------------------------------------|-----------------------------|
