@@ -22,6 +22,21 @@ I have tried my best to sort all those problems for you and ordered them as well
      - [mycodeschool (video)](https://www.youtube.com/watch?v=92S4zgXN17o&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
      - [UCSanDiegoX's Algorithms and Data Structures](https://www.edx.org/course/data-structures-fundamentals)
 
+## Collections cheet sheet
+
+| Collection Type | Get (Access) | Add (Insert) | Remove | Contains | Notes / Use Cases |
+|---|---|---|---|---|---|
+| **ArrayList** | O(1) | O(n) | O(n) | O(n) | Fast access, slow inserts/removals at arbitrary positions. Good for frequent read operations, infrequent modifications. |
+| **LinkedList** | O(n) | O(1) | O(1) | O(n) | Fast inserts/removals, slow random access. Use when frequent insertions/deletions are expected, but random access is less important. |
+| **HashSet** | N/A | O(1) | O(1) | O(1) | Fast set operations. No defined order. No duplicates allowed. |
+| **LinkedHashSet** | N/A | O(1) | O(1) | O(1) | Fast set operations. Maintains insertion order. No duplicates allowed. |
+| **TreeSet** | O(log n) | O(log n) | O(log n) | O(log n) | Sorted set. Useful for maintaining sorted order. |
+| **HashMap** | O(1) | O(1) | O(1) | O(1) | Fast map operations. Keys are unique. |
+| **LinkedHashMap** | O(1) | O(1) | O(1) | O(1) | Fast map operations. Maintains insertion order. |
+| **TreeMap** | O(log n) | O(log n) | O(log n) | O(log n) | Sorted map. Useful for maintaining sorted keys. |
+| **PriorityQueue** | O(1) | O(log n) | O(log n) | N/A | Efficient priority queue (min-heap). |
+| **ArrayDeque** | O(1) | O(1) | O(1) | N/A | Double-ended queue. Efficient for adding/removing at both ends. |
+
 ### Array
 | **ID** | **PROBLEM STATEMENT**                                    |  **PROBLEM LINK**           |
 |--------|----------------------------------------------------------|-----------------------------|
